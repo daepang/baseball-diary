@@ -1,0 +1,12 @@
+{
+  "name": "Baseball Diary",
+  "short_name": "Diary",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    { "src": "/logo.png", "sizes": "1024x1024", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="932" viewBox="0 0 430 932">
+  <style>
+    .frame{fill:#fff;stroke:#111;stroke-opacity:.15}
+    .bar{fill:#ffffffcc;stroke:#111;stroke-opacity:.15}
+    .item{fill:#fff;stroke:#e5e7eb}
+    .title{font:16px system-ui; font-weight:700}
+    .text{font:14px system-ui; fill:#111}
+    .muted{font:12px system-ui; fill:#6b7280}
+  </style>
+  <rect x="0.5" y="0.5" width="429" height="931" rx="24" class="frame"/>
+  <rect x="0" y="0" width="430" height="56" class="bar"/>
+  <text x="52" y="34" class="title">목록</text>
+  <g transform="translate(16,72)">
+    <g>
+      <rect x="0" y="0" width="398" height="64" rx="10" class="item"/>
+      <text x="12" y="26" class="text">2025-09-12 잠실</text>
+      <text x="12" y="46" class="muted">LG vs 두산 · ★★★★☆</text>
+    </g>
+    <g transform="translate(0,72)">
+      <rect x="0" y="0" width="398" height="64" rx="10" class="item"/>
+      <text x="12" y="26" class="text">2025-09-01 고척</text>
+      <text x="12" y="46" class="muted">키움 vs SSG · ★★★☆☆</text>
+    </g>
+    <g transform="translate(0,144)">
+      <rect x="0" y="0" width="398" height="64" rx="10" class="item"/>
+      <text x="12" y="26" class="text">2025-08-20 창원</text>
+      <text x="12" y="46" class="muted">NC vs 롯데</text>
+    </g>
+  </g>
+  <rect x="0" y="876" width="430" height="56" class="bar"/>
+  <text x="36" y="910" class="text">홈</text>
+  <text x="116" y="910" class="text">기록</text>
+  <text x="196" y="910" class="text">목록</text>
+  <text x="276" y="910" class="text">통계</text>
+  <text x="356" y="910" class="text">설정</text>
+</svg>
+

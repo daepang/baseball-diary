@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="932" viewBox="0 0 430 932">
+  <style>
+    .frame{fill:#fff;stroke:#111;stroke-opacity:.15}
+    .bar{fill:#ffffffcc;stroke:#111;stroke-opacity:.15}
+    .muted{fill:#f3f4f6;stroke:#9ca3af}
+    .text{font: 14px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; fill:#111}
+    .label{font:12px system-ui; fill:#6b7280}
+    .title{font:16px system-ui; font-weight:700}
+  </style>
+  <rect x="0.5" y="0.5" width="429" height="931" rx="24" class="frame"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="430" height="56" class="bar"/>
+  <circle cx="28" cy="28" r="12" fill="#000" fill-opacity=".12"/>
+  <text x="52" y="34" class="title">Baseball Diary</text>
+  <!-- Content -->
+  <g transform="translate(16,72)">
+    <text x="0" y="0" class="title">홈</text>
+    <rect x="0" y="12" width="398" height="72" rx="8" class="muted"/>
+    <text x="12" y="36" class="label">요약</text>
+    <text x="12" y="58" class="text">총 기록 수 · 바로가기</text>
+    <rect x="0" y="100" width="398" height="44" rx="8" class="muted"/>
+    <text x="12" y="128" class="text">기록하기</text>
+    <rect x="0" y="152" width="398" height="44" rx="8" class="muted"/>
+    <text x="12" y="180" class="text">목록 보기</text>
+  </g>
+  <!-- Bottom Nav -->
+  <rect x="0" y="876" width="430" height="56" class="bar"/>
+  <text x="36" y="910" class="text">홈</text>
+  <text x="116" y="910" class="text">기록</text>
+  <text x="196" y="910" class="text">목록</text>
+  <text x="276" y="910" class="text">통계</text>
+  <text x="356" y="910" class="text">설정</text>
+</svg>
+
