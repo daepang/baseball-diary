@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 import Card from "@/components/atoms/Card";
 import Button from "@/components/atoms/Button";
 import SelectField from "@/components/molecules/SelectField";
@@ -7,12 +8,14 @@ import { useSettings } from "./common/useSettings";
 export default function SettingsPageView() {
   const {
     exportData,
+    importDataFromJson,
     teams,
     favoriteTeamId,
     setSelectedFavoriteTeamId,
     applyFavoriteTeam,
     canApplyFavoriteTeam,
   } = useSettings();
+  const fileRef = useRef<HTMLInputElement | null>(null);
   return (
     <div className="space-y-6">
       <h1 className="text-lg font-semibold">설정</h1>
@@ -46,7 +49,30 @@ export default function SettingsPageView() {
 
       <Card className="space-y-3">
         <div className="text-sm opacity-70">데이터</div>
-        <Button onClick={exportData}>JSON 내보내기</Button>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <Button onClick={exportData}>JSON 내보내기</Button>
+          <div>
+            <Button
+              variant="secondary"
+              onClick={() => fileRef.current?.click()}
+              aria-label="JSON 가져오기"
+            >
+              JSON 가져오기
+            </Button>
+            <input
+              ref={fileRef}
+              type="file"
+              accept="application/json"
+              className="hidden"
+              onChange={(e) => {
+                const f = e.currentTarget.files?.[0];
+                if (!f) return;
+                void importDataFromJson(f);
+                e.currentTarget.value = "";
+              }}
+            />
+          </div>
+        </div>
       </Card>
     </div>
   );
